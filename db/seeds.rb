@@ -17,3 +17,14 @@ User.create(
     }
   ]
 )
+
+Category.create(
+  [
+    { name: "宠物" },
+    { name: "创意" },
+    { name: "动漫" },
+    { name: "家居" },
+    { name: "健康" },
+    { name: "美食" }
+  ]
+)
