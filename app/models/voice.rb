@@ -1,0 +1,6 @@
+class Voice < ActiveRecord::Base
+  belongs_to :user
+  belongs_to :item
+  
+  mount_uploader :file_uri, VoiceUploader
+end
