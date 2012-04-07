@@ -1,0 +1,29 @@
+//fork post
+<script type="text/javascript" charset="utf-8">
+$("#submit").click(function(){
+	$.ajax({
+		  url: 'http://0.0.0.0:3000/items/3/fork/2.json',
+		  type: 'POST',
+		  dataType: 'json',
+  		  data: {item:{list_id:1,name:"热映电影",content:"收藏2012年4月热映电影"},auth_token: "gseSYCEtQsqtTXyiDRwa"},
+		  success: function(data, textStatus, xhr) {
+			 alert(JSON.stringify(data));
+		  }
+		});
+});
+</script>
+
+//new list
+<script type="text/javascript" charset="utf-8">
+$("#submit").click(function(){
+	$.ajax({
+		  url: 'http://0.0.0.0:3000/lists.json',
+		  type: 'POST',
+		  dataType: 'json',
+  		  data: {list:{title:'test4',category_id:4},auth_token: "gseSYCEtQsqtTXyiDRwa"},
+		  success: function(data, textStatus, xhr) {
+			 alert(JSON.stringify(data));
+		  }
+		});
+});
+</script>
