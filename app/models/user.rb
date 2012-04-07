@@ -16,6 +16,7 @@ class User < ActiveRecord::Base
   has_many :songs
   has_many :photos
   has_many :voices
+  has_many :categories
   
   mount_uploader :avatar_url, AvatarUploader
 end
