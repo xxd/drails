@@ -5,7 +5,7 @@ class CategoriesController < ApplicationController
     respond_with(@category = Category.find_by_id(params[:id]))
   end
   
-  def syncCategory
+  def sync
     respond_with(@category = Category.where("id > :id", {:id => params[:id]}))
   end
 end

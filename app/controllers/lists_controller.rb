@@ -13,7 +13,7 @@ class ListsController < ApplicationController
     respond_with(@list = List.find_by_id(params[:id]))
   end
   
-  def syncList
+  def sync
     respond_with(@list = List.where("id > :id", {:id => params[:id]}))
   end
 end

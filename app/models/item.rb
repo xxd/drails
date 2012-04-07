@@ -11,7 +11,6 @@ class Item < ActiveRecord::Base
   
   protected
     def set_user_properties
-      self.name = self.user.name
       self.nickname = self.user.nickname
       self.avatar_url = self.user.avatar_url
     end
