@@ -4,7 +4,7 @@ require 'bundler/capistrano'
 set :application, "dandan"
 set :scm, :git
 set :deploy_via, :remote_cache       
-set :repository,  "git@74.207.224.81:dandan_rails" 
+set :repository,  "git@github.com:xxd/drails.git" 
 set :stages, %w(production staging)
 set :default_stage, "staging"
 #set :git_enable_submodules,1
