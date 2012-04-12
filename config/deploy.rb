@@ -26,7 +26,7 @@ task :production do
   role :db,         "74.207.224.81"                         #slave db
   set  :user,        "ddyw"
   set  :password,    "ddyw123"
-  set  :branch,      "dev"
+  set  :branch,      "mater"
 end
 # staging
 task :staging do
@@ -37,7 +37,7 @@ task :staging do
   role :db,         "74.207.224.81"                         #slave db
   set  :user,        "ddyw"
   set  :password,    "ddyw123"
-  set  :branch,      "dev"
+  set  :branch,      "master"
   # symlink the config/database.yml
   after "deploy:update_code", "config:db_symlink"
 end
