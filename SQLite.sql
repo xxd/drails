@@ -1,5 +1,5 @@
 --List
-CREATE TABLE lists(id INTEGER, title VARCHAR(255), category_id INTEGER,last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP);
+CREATE TABLE lists(id INTEGER, title VARCHAR(255), category_id INTEGER,last_update TIMESTAMP DEFAULT CURRENT_TIMESTAMP, isShare BOOLEAN DEFAULT '0' NOT NULL);
 INSERT INTO `lists` (`id`, `title`, `category_id`) VALUES (1, 'test', 1);
 INSERT INTO `lists` (`id`, `title`, `category_id`) VALUES (2, 'test2', 2);
 
