@@ -1,6 +1,5 @@
 #config/deploy.rb
 require 'bundler/capistrano'
-require 'capistrano-progressbar'
 
 set :application, "dandan"
 set :scm, :git
@@ -68,8 +67,8 @@ set :unicorn_pid, "#{deploy_to}/current/tmp/pids/unicorn.pid"
 set :rake, "#{bundle_binary} exec rake"
 
 set :default_environment, {
-  'PATH' => "/usr/local/rvm/gems/ruby-1.9.2-p290/bin:/usr/local/rvm/gems/ruby-1.9.2-p290@global/bin:/usr/local/rvm/rubies/ruby-1.9.2-p290/bin:/usr/local/rvm/bin:/mongodb/bin:/redis/bin:/mysql/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games",
-  'RUBY_VERSION' => 'ruby 1.9.3p125',
+  'PATH' => "/usr/local/rvm/gems/ruby-1.9.2-p290/bin:/usr/local/rvm/gems/ruby-1.9.2-p290@global/bin:/usr/local/rvm/rubies/ruby-1.9.2-p290/bin:/usr/local/rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+  'RUBY_VERSION' => '1.9.2-p290',
   'GEM_HOME' => '/usr/local/rvm/gems/ruby-1.9.2-p290',
   'GEM_PATH' => '/usr/local/rvm/gems/ruby-1.9.2-p290:/usr/local/rvm/gems/ruby-1.9.2-p290@global'
 }
