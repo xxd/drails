@@ -27,7 +27,7 @@ test:
   reconnect: false
   database: dandan_test
   pool: 5
-  username: root
+  username: dan
   password: pw1234567!
   host: localhost
 
