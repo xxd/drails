@@ -38,7 +38,10 @@ gem 'unicorn'
 # Deploy with Capistrano
 gem 'capistrano'
 
-gem 'execjs'
-gem 'therubyracer'
+# JS runtime
+group :linux do
+  gem 'execjs'
+  gem 'therubyracer'
+end
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
