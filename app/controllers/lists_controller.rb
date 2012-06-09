@@ -2,7 +2,7 @@ class ListsController < ApplicationController
   respond_to :json
   
   def index
-    respond_with(@lists = current_user.lists)
+    respond_with(@lists = current_user.categories)
   end
   
   def create
